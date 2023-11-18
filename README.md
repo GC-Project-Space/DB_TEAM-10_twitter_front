@@ -14,11 +14,15 @@
 3. JDBC를 이용한 비지니스 로직 구현
 4. 포론트와의 연결
 
-### 프로젝트 도구
-- visual studio code
+### Tech stack
 - [Notion](https://www.notion.so/672c2236e97f4bed937168cd7292d122)
 - Kakao Work
+- visual studio code
+- React.js
+- Java Script
 - IntelliJ
+- mySQL
+- spring (spring data jdbc)
   
 ## 참여 인원
 
