@@ -38,17 +38,17 @@ class ProfileFragment: Fragment() {
 
 
         //탭 아이콘 설정
-        mContext = requireContext()
-        val tabLayout: TabLayout=binding.profileTab
-        tabLayout.setSelectedTabIndicatorColor(ContextCompat.getColor(mContext, android.R.color.black))
+        //mContext = requireContext()
+        //val tabLayout: TabLayout=binding.profileTab
+        //tabLayout.setSelectedTabIndicatorColor(ContextCompat.getColor(mContext, android.R.color.black))
 
 
 
         //탭 스와이프
-        val tabAdapter = ProfileViewpagerAdapter(this)
-        binding.viewPager.adapter=tabAdapter
+        //val tabAdapter = ProfileViewpagerAdapter(this)
+        //binding.viewPager.adapter=tabAdapter
 
-        TabLayoutMediator(binding.profileTab, binding.viewPager){tab, position ->
+        /*TabLayoutMediator(binding.profileTab, binding.viewPager){tab, position ->
             when (position) {
                 0 -> {  //탭 아이콘 설정
                     tab.setIcon(R.drawable.ic_postgrid)
@@ -57,25 +57,46 @@ class ProfileFragment: Fragment() {
                     tab.setIcon(R.drawable.ic_myinfo_tag)
                 }
             }
-        }.attach()
+        }.attach()*/
 
 
         //하이라이트 리사이클러뷰
-        val dataList = listOf("신규", "Name 2", "Name 3", "Name 4", "Name 5", "Name 6", "Name 7", "Name 8", "Name 9")
+       // val dataList = listOf("신규", "Name 2", "Name 3", "Name 4", "Name 5", "Name 6", "Name 7", "Name 8", "Name 9")
 
 
-        val Hadapter = HighlightAdapter(dataList)
+        //val Hadapter = HighlightAdapter(dataList)
 
-        val HlayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        //val HlayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
 
 
-        binding.highlightRecyclerView.layoutManager = HlayoutManager
-        binding.highlightRecyclerView.adapter = Hadapter
+        //binding.highlightRecyclerView.layoutManager = HlayoutManager
+        //binding.highlightRecyclerView.adapter = Hadapter
 
         //사이 사이 공간
-        Hadapter.setItemSpacing(binding.highlightRecyclerView, 25)
+        //Hadapter.setItemSpacing(binding.highlightRecyclerView, 25)
 
 
+        //게시글 리사이클러뷰
+        val dataList = listOf(
+            StoryItemData("Name1", "1시간 전", R.drawable.my_post),
+            StoryItemData("Name2", "2시간 전", R.drawable.my_post),
+            StoryItemData("Name3", "3시간 전", R.drawable.my_post),
+            StoryItemData("Name4", "4시간 전", R.drawable.my_post),
+            StoryItemData("Name5", "5시간 전", R.drawable.my_post),
+            StoryItemData("Name6", "6시간 전", R.drawable.my_post),
+            StoryItemData("Name7", "7시간 전", R.drawable.my_post),
+            StoryItemData("Name8", "8시간 전", R.drawable.my_post),
+            StoryItemData("Name9", "9시간 전", R.drawable.my_post))
+
+
+
+        val Padapter = PostAdapter( dataList)
+
+        val PlayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+
+
+        binding.postRecy.layoutManager = PlayoutManager
+        binding.postRecy.adapter = Padapter
 
 
        //프로필 수정 결과를 처리
