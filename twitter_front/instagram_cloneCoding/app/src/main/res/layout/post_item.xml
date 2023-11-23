@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="#FFFFFF"
     android:backgroundTint="#FFFFFF"
-    android:foregroundTint="#DAD8D8">
+    android:foregroundTint="#FFFFFF">
 
     <LinearLayout
         android:id="@+id/postItem"
@@ -45,6 +45,7 @@
                 android:layout_marginLeft="11dp"
                 android:text="people"
                 android:textSize="14dp"
+                android:textStyle="bold"
                 android:textColor="@color/black"/>
 
             <ImageView
@@ -56,10 +57,30 @@
         </LinearLayout>
 
         <!--post 하단 바-->
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="TextView" />
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="410dp"
             android:src="@drawable/my_post" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_margin="20dp"
+            android:text="좋아요 1개"
+            android:textColor="@color/black"
+            android:textSize="14.5dp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:background="@color/white"
@@ -112,16 +133,6 @@
             android:background="@color/white"
             android:orientation="vertical">
             <!--하단 글씨-->
-            <TextView
-                android:textColor="@color/black"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="8dp"
-                android:text="좋아요 1개"
-                android:textSize="14.5dp"
-                android:textStyle="bold" />
 
             <TextView
 
@@ -129,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginBottom="4dp"
                 android:bufferType="spannable"
                 android:text="HANA 안녕하세요..........!!!!"
@@ -140,7 +151,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginBottom="10dp"
                 android:text="댓글 10개 더보기"
                 android:textColor="@color/black"
