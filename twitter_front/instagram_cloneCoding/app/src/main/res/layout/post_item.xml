@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:foregroundTint="#DAD8D8">
+
+    <LinearLayout
+        android:id="@+id/postItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DAD8D8"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--post 상단 바-->
+
+        <!--post 사진-->
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginLeft="9dp"
+                android:src="@drawable/ic_profile_default" />
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:text="people"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="242dp"
+                android:layout_marginLeft="11dp"
+                android:src="@drawable/ic_post_more_option" />
+        </LinearLayout>
+
+        <!--post 하단 바-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="410dp"
+            android:src="@drawable/my_post" />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="15dp"
+                android:background="@android:color/transparent"
+                android:padding="3dp"
+                android:src="@drawable/ic_heart" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:padding="3dp"
+                android:src="@drawable/ic_comment" />
+
+            <ImageButton
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:padding="3dp"
+                android:src="@drawable/ic_share" />
+
+            <ImageButton
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="230dp"
+                android:background="@android:color/transparent"
+                android:padding="3dp"
+                android:src="@drawable/ic_bookmark" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <!--하단 글씨-->
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="좋아요 1개"
+                android:textSize="14.5dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/cmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="4dp"
+                android:bufferType="spannable"
+                android:text="HANA 안녕하세요..........!!!!"
+                android:textColor="@color/black"
+                android:textSize="13.7dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="댓글 10개 더보기"
+                android:textColor="@color/black"
+
+                android:textSize="13dp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpTabEMFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/ID"
+                style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+                android:layout_width="335dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="18dp"
+                android:hint="이메일"
+                android:inputType="textPersonName"
+                android:textSize="12.5dp" />
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="30dp"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@android:color/transparent"
+                android:maxWidth="20dp"
+                android:maxHeight="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_text_erase" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="370dp"
+            android:layout_height="57dp"
+            android:layout_marginBottom="17dp"
+            android:backgroundTint="#1877F1"
+            android:text="완료" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
