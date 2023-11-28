@@ -83,6 +83,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_profile_default" />
 
+
             <LinearLayout
                 android:id="@+id/linearLayout2"
                 android:layout_width="38dp"
@@ -170,7 +171,22 @@
             android:layout_marginTop="3dp"
             android:text="심세원"
             android:textColor="@color/black"
-            android:textSize="13dp" />
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/account"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:drawableEnd="@drawable/ic_arrow_bottom"
+            android:shadowColor="#FEFEFE"
+            android:text="UMC_4th_android_A"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:iconTint="#000000" />
 
         <TextView
             android:id="@+id/introduce"
@@ -187,6 +203,7 @@
 
 
         <!--스토리-->
+
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -244,29 +261,17 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"/>
 
-            <!--탭 바-->
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/profileTab"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                app:tabGravity="fill"
-
-                app:tabIconTint="@color/black"
-                app:tabIndicatorColor="@color/black"
-                app:tabMode="fixed" />
-
-
-        </LinearLayout>
-
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/view_pager"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/post_recy"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
