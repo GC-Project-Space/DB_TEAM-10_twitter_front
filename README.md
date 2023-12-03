@@ -17,12 +17,13 @@
 ### Tech stack
 - [Notion](https://www.notion.so/672c2236e97f4bed937168cd7292d122)
 - Kakao Work
-- visual studio code
-- React.js
-- Java Script
+- Android Studio
+- Kotiln
 - IntelliJ
 - mySQL
-- spring (spring data jdbc)
+- spring
+- Javs
+- Data Grip
   
 ## 참여 인원
 
